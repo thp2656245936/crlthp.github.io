@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1174",
+      "name": "用研",
+      "font_class": "yongyan",
+      "unicode": "f00f5",
+      "unicode_decimal": 983285
+    },
+    {
+      "icon_id": "2401929",
+      "name": "访问",
+      "font_class": "fangwen",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "13645029",
+      "name": "相册",
+      "font_class": "xiangce",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "35629905",
+      "name": "爱情",
+      "font_class": "aiqing",
+      "unicode": "e91e",
+      "unicode_decimal": 59678
+    }
+  ]
+}
