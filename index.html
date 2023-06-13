@@ -96,9 +96,9 @@
                 <h2>唐海平 & 陈如蓝</h2>
                 <h5>“多巴胺的绑架没有救赎，我们都是上瘾的囚徒。”</h5>
             </div>
+            <div id="timeoff" style="margin-bottom: ;"></div>
         </div>
-
-
+        
         <div class="main-content">                                                  
             <div class="fluid-container">
                 <!--3-->
@@ -310,6 +310,19 @@
             })(window,document);
         </script>
         
+        <script>                   //计时
+            let timeoff = document.getElementById('timeoff')
+            let timer = setInterval(function(){
+                let now_time = new Date() 
+                let end_time = new Date('2023-2-18 22:33:00') 
+                let left_time = parseInt((now_time-end_time)/1000)     // 秒
+                let d = parseInt(left_time/86400)    //天
+                let h = parseInt(left_time%86400/3600)    // 小时
+                let m = parseInt(left_time%3600/60) // 分钟
+                let s = parseInt(left_time%60)      // 秒
+                timeoff.innerText = `我们已经在一起${d}天${h}时${m}分${s}秒.`
+                })
+        </script>
         <script>
             let aaa=document.getElementsByClassName('button big default')
             aaa[0].onclick=function(){
