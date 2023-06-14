@@ -111,7 +111,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h4 class="widget-title"><span class="iconfont icon-yejing" style="font-size: 30px;"></span><b style="margin-left: 1em;">记录美好时刻</b></h4>
-                        <p>去哪里旅行并不重要，重要的是跟谁一起旅行</p>
+                        <p>去哪里旅行并不重要，重要的是跟谁一起旅行.</p>
                     </div>
                 </div>
                 <div class="row projects-holder">
@@ -120,8 +120,8 @@
                             <img src="img/1.jpg" alt="">
                             <div class="project-hover">
                                 <div class="inside">
-                                    <h5><a href="#">第一次被偷拍</a></h5>
-                                    <p>也是官宣的那天</p>
+                                    <h5><a href="#">在武汉</a></h5>
+                                    <p>最满意的照片之一(1/2)</p>
                                 </div>
                             </div>
                         </div>
@@ -132,7 +132,7 @@
                             <div class="project-hover">
                                 <div class="inside">
                                     <h5><a href="#">在武汉</a></h5>
-                                    <p>最满意的照片之一(1/2)</p>
+                                    <p>最满意的照片之一(2/2)</p>
                                 </div>
                             </div>
                         </div>
@@ -142,8 +142,8 @@
                             <img src="img/3.jpg" alt="">
                             <div class="project-hover">
                                 <div class="inside">
-                                    <h5><a href="#">第一次去电影院</a></h5>
-                                    <p>玲芽之旅</p>
+                                    <h5><a href="#">第一次被偷拍</a></h5>
+                                    <p>官宣</p>
                                 </div>
                             </div>
                         </div>
@@ -154,7 +154,7 @@
                             <div class="project-hover">
                                 <div class="inside">
                                     <h5><a href="#">在岳阳</a></h5>
-                                    <p>是我们的第一次短途旅行</p>
+                                    <p>第一次短途旅行</p>
                                 </div>
                             </div>
                         </div>
@@ -165,7 +165,7 @@
                             <div class="project-hover">
                                 <div class="inside">
                                     <h5><a href="#">在武汉</a></h5>
-                                    <p>最满意的照片之一(1/2)</p>
+                                    <p>shadow</p>
                                 </div>
                             </div>
                         </div>
@@ -176,13 +176,13 @@
                             <div class="project-hover">
                                 <div class="inside">
                                     <h5><a href="#">在操场</a></h5>
-                                    <p>happy</p>
+                                    <p>HZD</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div> 
-                    <h1 style="float: right;font-size: 25px;color:black;font-family: 楷体;">查看所有照片</h1>
+                    <h1 id="photo" style="float: right;font-size: 25px;color:black;font-family: 楷体;">查看所有照片</h1>
             </div>     
 
 
@@ -345,6 +345,15 @@
 
 
     <script>
+        let photo=document.getElementById('photo')
+        photo.onmouseover=function(){
+            photo.bgcolor='#096'
+        }
+    </script>
+    
+
+
+    <script>
         let aaa=document.getElementsByClassName('button big default')
         aaa[0].onclick=function(){
             alert("提交失败：请等待我们完善该功能")
@@ -353,14 +362,14 @@
 
 
 
+    <script>alert("这是thp&crl的私人网站,目前开发中")</script>
+
+
+
     <script src="js/vendor/jquery-1.10.2.min.js"></script>
     <script src="js/min/plugins.min.js"></script>
     <script src="js/min/main.min.js"></script>
      
-
-    
-    <script>alert("这是thp&crl的私人网站,目前开发中")</script>
-
 
 
 </body>
