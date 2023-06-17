@@ -17,6 +17,7 @@
             float: left;
             background-size: cover;
             background-repeat: no-repeat;
+            overflow: hidden;
         }
         .photos2{
             width: 245px;
@@ -24,6 +25,7 @@
             float: left;
             background-size: cover;
             background-repeat: no-repeat;
+            overflow: hidden;
         }
         .photos3{
             width:484px;
@@ -31,6 +33,19 @@
             float:right;
             background-size: cover;
             background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        .photos1 img:hover{
+            transform: scale(1.1);
+            transition: 3s;
+        }
+        .photos2 img:hover{
+            transform: scale(1.1);
+            transition: 3s;
+        }
+        .photos3 img:hover{
+            transform: scale(1.1);
+            transition: 3s;
         }
     </style>           
 </head>
@@ -80,7 +95,10 @@
             <div style="height: 332px;width: 1451px;">
                 <div class="row"> 
                     <div class="col-lg-12">
-                        <div class="photos1" style="background-image: url(img/ourphotos/武汉/3.jpg);"></div>
+                        <div class="photos1"><img src="img/ourphotos/武汉/3.jpg" alt="" style="width: 477px;height: 332px;"></div>
+                        <!-- <div class="photos2"><img src="img/ourphotos/武汉/5.jpg" alt="" style="width: 477px;height: 332px;"></div>
+                        <div class="photos2"><img src="img/ourphotos/武汉/7.jpg" alt="" style="width: 477px;height: 332px;"></div>
+                        <div class="photos3"><img src="img/ourphotos/武汉/4.jpg" alt="" style="width: 477px;height: 332px;"></div> -->
                         <div class="photos2" style="background-image: url(img/ourphotos/武汉/5.jpg);"></div>
                         <div class="photos2" style="background-image: url(img/ourphotos/武汉/7.jpg);"></div>
                         <div class="photos3" style="background-image: url(img/ourphotos/武汉/4.jpg);"></div>
