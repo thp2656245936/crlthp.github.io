@@ -12,25 +12,45 @@
     <link rel="stylesheet" href="css/templatemo-style(photos).css">     
     <style>
         .photos1{
-            width: 477px;
+            width: 483px;
             height: 332px;
             float: left;
             background-size: cover;
             background-repeat: no-repeat;
+            overflow: hidden;
         }
         .photos2{
-            width: 245px;
+            width: 242px;
             height: 332px;
             float: left;
             background-size: cover;
             background-repeat: no-repeat;
+            overflow: hidden;
         }
         .photos3{
-            width:484px;
+            width:483px;
             height: 332px;
             float:right;
             background-size: cover;
             background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        .photos1 img:hover{
+            transform: scale(1.1);
+            transition: 1.5s;
+        }
+        .photos2 img:hover{
+            transform: scale(1.1);
+            transition: 1.5s;
+        }
+        .photos3 img:hover{
+            transform: scale(1.1);
+            transition: 1.5s;
+        }
+        img{                           /* 自适应 */       
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         }
     </style>                           
 </head>
