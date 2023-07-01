@@ -38,7 +38,7 @@
 </head>
 <body>
     <div id="big">
-        <a href="">
+        <a href="" class="shouji">
             <div class="little">
                 <span class="iconfont icon-shouji" style="font-size: 195px;color: rgba(0, 229, 255, 0.5);margin-left: 54px;"></span>
                 <p>我用的手机</p>
@@ -57,6 +57,12 @@
 
     <script>
         alert('请选择你正在使用的设备')
+    </script>
+    <script> 
+        let shouji=document.getElementsByClassName('shouji')
+        shouji[0].onclick=function(){
+            alert("手机端网页在开发中哦，请使用电脑访问")
+        }
     </script>
 </body>
 </html>
