@@ -5,24 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thp & crl</title>
     <link rel="stylesheet" href="font-append/手机电脑/iconfont.css">
+    <link rel="stylesheet" href="font-append/main/iconfont.css">
     <link rel="icon" href="favicon.ico">
     <body>
         <style>
             body{
                 background-color: rgb(252, 184, 198);
+            }
+            *{
                 margin: 0%;
                 padding: 0%;
             }
             #top{
                 position:fixed;
                 background-color:rgb(95, 109, 126);
-                height: 100px;
+                height: 95px;
                 width: 360px;
             }
-            #big{
+            #profile{
+                height: 80px;
+                width: 80px;
+                margin-top: 5px;
+                margin-left: 4px;
+                border-radius: 50%;
+                padding: 2px;
+                float: left;
+                background-color: rgb(255, 255, 255);
+                background-image: url(img/profile.jpg);
+                background-size: 90px;
+                background-repeat: no-repeat;
+            }
+            .topword{
+                float: left;
+                height: 100%;
+            }
+            #topbig{
+                float: right;
+                height: 100%;
+                width: 146px;
+                border-left: 1px;
+                border-top: 0px;
+                border-bottom: 0px;
+                border-right: 0px;
+                border-color: antiquewhite;
+                border-style: solid;
+            }
+            .topbig{
+                background-color: rgb(115, 134, 159);
+                height: 50%;
+                width: 50%;
+                float: left;
+            }
+
+
+
+            #zhuye{
                 background-color: antiquewhite;
-                height: 585px;
-                width: 345px;
+                height: 610px;
                 background-image: url(img/profile1.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -33,11 +72,68 @@
 </head>
 <body>
     <div id="top">
-        
+        <div id="profile">
+        </div>
+        <div class="topword">
+            <p style="color: aliceblue;margin-top:10px;margin-left: 20px;font-size: 18px;">thp & crl</p>
+            <p style="color: aqua;margin-top: 10px;margin-left:5px;font-size: 15px;">这是我们的网站~</p>
+            <p style="color: antiquewhite;margin-top: 10px;font-size: 10px;">（点击上面头像注册/登录）</p>
+        </div>
+        <div id="topbig">
+            <a href="#zhuye"><div class="topbig" style="background-color: rgb(188, 193, 96);">
+                <span class="iconfont icon-aiqing" style="font-size: 25px;margin-left: 20px;"></span>
+                <span style="font-size: 15px;margin-left: 18px;">主页</span>
+            </div></a>
+            <a href="#projects"><div class="topbig" style="background-color: rgb(46, 167, 192);">
+                <span class="iconfont icon-xiangce" style="font-size: 25px;margin-left: 20px;"></span>
+                <span style="font-size: 15px;margin-left: 18px;">相册</span>
+            </div></a>
+            <a href="#about"><div class="topbig" style="background-color: rgb(149, 71, 155);">
+                <span class="iconfont icon-yongyan" style="font-size: 25px;margin-left: 20px;"></span>
+                <span style="font-size: 15px;margin-left: 18px;">作品</span>
+            </div></a>
+            <a href="#contact"><div class="topbig" style="background-color: rgb(20, 165, 54);">
+                <span class="iconfont icon-fangwen" style="font-size: 25px;margin-left: 20px;"></span>
+                <span style="font-size: 15px;margin-left: 8.7px;">访问记录</span>
+            </div></a>
+        </div>
     </div>
-    <div id="big"></div>
-    <div id="big"></div>
 
+
+    <div id="zhuye">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span style="font-size:30px;color: rgb(104, 155, 199);margin-left:65px;">唐海平 & 陈如蓝</span>
+        <span style="font-size:25px;color: rgb(254, 196, 108);float: left;margin-top: 120px;">“&nbsp;多巴胺的绑架没有救赎，</span>
+        <span style="font-size:25px;color: rgb(254, 196, 108);float: right;margin-top: 50px;">我们都是上瘾的囚徒。”</span>
+        <div style="border-style: solid;border-color: rgb(189, 182, 101);border-width:5px;height: 60px;background-color: rgb(191,165,175);margin-top:353px;text-align: center;">
+            <p id="timeoff" style="color:aliceblue;font-size: 21px;margin-top: 15px;"></p>
+        </div>
+    </div>
+
+
+
+
+
+    <script>                                              //计时
+        let timeoff = document.getElementById('timeoff')
+        let timer = setInterval(function(){
+            let now_time = new Date() 
+            let end_time = new Date('2023-2-18 22:33:00') 
+            let left_time = parseInt((now_time-end_time)/1000)    
+            let d = parseInt(left_time/86400)   
+            let h = parseInt(left_time%86400/3600)   
+            let m = parseInt(left_time%3600/60) 
+            let s = parseInt(left_time%60)     
+            timeoff.innerText = `我们已经在一起${d}天${h}时${m}分${s}秒.`
+            })
+    </script>
 
     <script>                                          //点击爱心
         (function(window,document,undefined){
