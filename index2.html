@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thp & crl</title>
+    <link rel="stylesheet" href="css/shouji.css"> <!-- <link rel="stylesheet" href="css/templatemo-style.css"> -->
     <link rel="stylesheet" href="font-append/h1/iconfont.css">
     <link rel="stylesheet" href="font-append/main/iconfont.css">
     <link rel="icon" href="favicon.ico">
@@ -21,6 +22,7 @@
                 background-color:rgb(95, 109, 126);
                 height: 95px;
                 width: 360px;
+                z-index: 2;
             }
             #profile{
                 height: 80px;
@@ -68,18 +70,18 @@
                 background-position: center;
             }
             #xiangce{
-                background-color: rgb(46, 167, 192);
+                background-color:#90c7f0;;
                 width: 100%;
                 height: 610px;
             }
             #zuopin{
-                background-color: rgb(149, 71, 155);
+                background-color: #88ddf1;;
                 width: 100%;
                 height: 610px;
 
             }
             #fangwen{
-                background-color: rgb(20, 165, 54);
+                background-color: #a1ead6;
                 width: 100%;
                 height: 610px;
             }
@@ -91,6 +93,31 @@
                 margin-left: 10px;
                 margin-right: 10px;
             }
+            .little1{
+                background-color: black;
+                border-color: antiquewhite;
+                border-style: solid;
+                margin: 10px;
+                height: 120px;
+                width: 147px;
+                float: left;
+                z-index: 1;
+            }
+            .little2{
+                background-color: rgb(218, 4, 4);
+                border-color: antiquewhite;
+                border-style: solid;
+                margin: 10px;
+                height: 250px;
+                width: 147px;
+                float: left;
+                z-index: 1;
+            }
+            img{                                
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                }
             hr{
                 margin-top: 50px;
                 margin-bottom: 25px;
@@ -100,13 +127,13 @@
             .h4{
                 text-align: center;
                 font-size: 20px;
-                color: #00f7ff;
+                color: #17abe0;
             }
             .h5{
                 text-align: center;
                 margin-top: 15px;
                 margin-bottom: 5px;
-                color: #0affa9b2;
+                color: #01122fb2;
             }
         </style>
     </body>
@@ -121,19 +148,19 @@
             <p style="color: antiquewhite;margin-top: 10px;font-size: 10px;">（点击左边头像注册/登录）</p>
         </div>
         <div id="topbig">
-            <a href="#zhuye"><div class="topbig" style="background-color: rgb(188, 193, 96);">
+            <a href="#zhuye"><div class="topbig" style="background-color:#8caede;">
                 <span class="iconfont icon-aiqing" style="font-size: 25px;margin-left: 20px;"></span>
                 <span style="font-size: 15px;margin-left: 18px;">主页</span>
             </div></a>
-            <a href="#xiangce"><div class="topbig" style="background-color: rgb(46, 167, 192);">
+            <a href="#xiangce"><div class="topbig" style="background-color: #90c7f0;">
                 <span class="iconfont icon-xiangce" style="font-size: 25px;margin-left: 20px;"></span>
                 <span style="font-size: 15px;margin-left: 18px;">相册</span>
             </div></a>
-            <a href="#zuopin"><div class="topbig" style="background-color: rgb(149, 71, 155);">
+            <a href="#zuopin"><div class="topbig" style="background-color: #88ddf1;">
                 <span class="iconfont icon-yongyan" style="font-size: 25px;margin-left: 20px;"></span>
                 <span style="font-size: 15px;margin-left: 18px;">作品</span>
             </div></a>
-            <a href="#fangwen"><div class="topbig" style="background-color: rgb(20, 165, 54);">
+            <a href="#fangwen"><div class="topbig" style="background-color:#a1ead6;">
                 <span class="iconfont icon-fangwen" style="font-size: 25px;margin-left: 20px;"></span>
                 <span style="font-size: 15px;margin-left: 8.7px;">访问记录</span>
             </div></a>
@@ -166,7 +193,56 @@
             <h5 class="h5">去哪里旅行并不重要，重要的是跟谁一起旅行.</h5>
         </div>
         <div id="inner">
+            <div class="col-md-4 col-sm-6">                                    <!--照片1-->
+                <div class="project-item little1">
+                    <img src="img/1.jpg" alt="">
+                    <div class="project-hover">
+                        <div class="inside">
+                            <h5 style="color: aliceblue;">在武汉</h5>
+                            <p>最满意的照片之一(1/2)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-md-4 col-sm-6">                                    <!--照片2-->
+                <div class="project-item little1">
+                    <img src="img/2.jpg" alt="">
+                    <div class="project-hover">
+                        <div class="inside">
+                            <h5 style="color: aliceblue;">在武汉</h5>
+                            <p>最满意的照片之一(2/2)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">                                    <!--照片3-->
+                <div class="project-item little2">
+                    <img src="img/5.jpg" alt="">
+                    <div class="project-hover">
+                        <div class="inside">
+                            <h5 style="color: aliceblue;">在武汉</h5>
+                            <p>shadow</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">                                    <!--照片4-->
+                <div class="project-item little2">
+                    <img src="img/4.jpg" alt="">
+                    <div class="project-hover">
+                        <div class="inside">
+                            <h5 style="color: aliceblue;">在岳阳</h5>
+                            <p>第一次短途旅行</p>
+                            <a href=""><p style="color: aquamarine;">点我</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p style="float: right;font-size: 15px;color:black;font-family: 楷体;margin-top:0px;">（点击最后一张图片查看所有<span style="color: aqua;">相册</span>）</p>
         </div>
     </div>
 
@@ -195,18 +271,19 @@
                     <fieldset style="width: 100px;margin-left: 28px;">
                         <input type="text" placeholder="你跟他的关系？" style="font-size: 20px;background-color: rgb(20, 165, 54);border: 0;">
                     </fieldset>
+                    <fieldset style="width: 100px;margin-left: 28px;">
+                        <input type="text" placeholder="你跟她的关系？" style="font-size: 20px;background-color: rgb(20, 165, 54);border: 0;">
+                    </fieldset>
+                    <fieldset style="width: 100px;margin-left: 28px;">
+                        <input type="text" placeholder="你的QQ/微信号？" style="font-size: 20px;background-color: rgb(20, 165, 54);border: 0;">
+                    </fieldset>
                     <!-- <fieldset>
-                        <input type="text" placeholder="你跟她的关系？">
-                    </fieldset>
-                    <fieldset>
-                        <input type="text" placeholder="你的QQ/微信号？">
-                    </fieldset>
-                    <fieldset>
+                        
+                       
                         <textarea name="message" cols="30" rows="6" placeholder="Write down your message here.(留言功能尚未开通，请以后再试)"></textarea>
-                    </fieldset>
-                    <fieldset>
+                    
                         <input type="submit" class="button big default" value="发送给ta">
-                    </fieldset>
+                   
                 </form>
                 <form action="#" style="color:rgb(52, 44, 44);">
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="who">&nbsp;只发给他</p>
