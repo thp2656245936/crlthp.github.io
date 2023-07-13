@@ -104,7 +104,6 @@
                 z-index: 1;
             }
             .little2{
-                background-color: rgb(218, 4, 4);
                 border-color: antiquewhite;
                 border-style: solid;
                 margin: 10px;
@@ -255,7 +254,7 @@
         </div>
         <div id="inner">
             <div class="col-md-4 col-sm-6">                                    <!--照片1-->
-                <div class="project-item little1">
+                <div class="project-item little1" style="margin-top: 5px;">
                     <img src="img/ourphotos/works/1.jpg" alt="">
                     <div class="project-hover">
                         <div class="inside">
@@ -267,7 +266,7 @@
             </div>
 
             <div class="col-md-4 col-sm-6">                                    <!--照片2-->
-                <div class="project-item little1">
+                <div class="project-item little1" style="margin-top: 5px;">
                     <img src="img/ourphotos/works/5.jpg" alt="">
                     <div class="project-hover">
                         <div class="inside">
@@ -341,28 +340,27 @@
         <div id="inner">
             <div>
                 <form method="post">
-                    <fieldset style="width: 100px;margin-left: 28px;">
-                        <input type="text" placeholder="你跟他的关系？" style="font-size: 20px;background-color: rgb(20, 165, 54);border: 0;">
+                    <fieldset style="width: 100px;margin-left: 60px;">
+                        <input type="text" placeholder="你跟他的关系？" style="font-size: 20px;background-color: rgb(45, 150, 158);border: 0;">
                     </fieldset>
-                    <fieldset style="width: 100px;margin-left: 28px;">
-                        <input type="text" placeholder="你跟她的关系？" style="font-size: 20px;background-color: rgb(20, 165, 54);border: 0;">
+                    <fieldset style="width: 100px;margin-left: 60px;">
+                        <input type="text" placeholder="你跟她的关系？" style="font-size: 20px;background-color: rgb(45, 150, 158);border: 0;">
                     </fieldset>
-                    <fieldset style="width: 100px;margin-left: 28px;">
-                        <input type="text" placeholder="你的QQ/微信号？" style="font-size: 20px;background-color: rgb(20, 165, 54);border: 0;">
+                    <fieldset style="width: 100px;margin-left: 60px;">
+                        <input type="text" placeholder="你的QQ/微信号？" style="font-size: 20px;background-color: rgb(45, 150, 158);border: 0;">
                     </fieldset>
-                    <!-- <fieldset>
-                        
-                       
-                        <textarea name="message" cols="30" rows="6" placeholder="Write down your message here.(留言功能尚未开通，请以后再试)"></textarea>
-                    
-                        <input type="submit" class="button big default" value="发送给ta">
-                   
-                </form>
-                <form action="#" style="color:rgb(52, 44, 44);">
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="who">&nbsp;只发给他</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="who">&nbsp;只发给她</p> -->
+                    <fieldset>
+                        <textarea name="message" cols="37" rows="16" placeholder="Write down your message here.(留言功能尚未开通，请以后再试)" style="font-size: 15px;background-color: rgb(45, 150, 158);border: 0;">
+                        </textarea>
+                    </fieldset>
                 </form>
             </div>
+                <input type="submit" class="button big default" value="发送给ta" style="background-color: #8caede;font-size: 20px;float: right;margin-top: 10px;margin-right: 10px;">
+                <form action="#" style="color:rgb(52, 44, 44);margin-top: 10px;">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="who">&nbsp;只发给他</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="who">&nbsp;只发给她</p>
+                </form>
+            
         </div>
     </div>
     <div style="margin-top: 15px;height: 30px;">
@@ -373,6 +371,13 @@
 
 
 
+
+    <script>
+        let aaa=document.getElementsByClassName('button big default')
+        aaa[0].onclick=function(){
+            alert("提交失败：请等待我们完善该功能")
+        }
+    </script>
 
     <script>                                              //计时
         let timeoff = document.getElementById('timeoff')
