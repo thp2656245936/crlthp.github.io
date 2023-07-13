@@ -4,65 +4,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thp & crl</title>
-    <link rel="stylesheet" href="font-append/手机电脑/iconfont.css">
+    <link rel="stylesheet" href="font-append/h1/iconfont.css">
+    <link rel="stylesheet" href="font-append/main/iconfont.css">
     <link rel="icon" href="favicon.ico">
     <body>
         <style>
             body{
                 background-color: rgb(252, 184, 198);
             }
-            #big{
+            *{
+                margin: 0%;
+                padding: 0%;
+            }
+            #top{
+                position:fixed;
+                background-color:rgb(95, 109, 126);
+                height: 95px;
+                width: 360px;
+            }
+            #profile{
+                height: 80px;
+                width: 80px;
+                margin-top: 5px;
+                margin-left: 4px;
+                border-radius: 50%;
+                padding: 2px;
+                float: left;
+                background-color: rgb(255, 255, 255);
+                background-image: url(img/profile.jpg);
+                background-size: 90px;
+                background-repeat: no-repeat;
+            }
+            .topword{
+                float: left;
+                height: 100%;
+            }
+            #topbig{
+                float: right;
+                height: 100%;
+                width: 146px;
+                border-left: 1px;
+                border-top: 0px;
+                border-bottom: 0px;
+                border-right: 0px;
+                border-color: antiquewhite;
+                border-style: solid;
+            }
+            .topbig{
+                background-color: rgb(115, 134, 159);
+                height: 50%;
+                width: 50%;
+                float: left;
+            }
+
+
+
+            #zhuye{
                 background-color: antiquewhite;
-                height: 585px;
-                width: 345px;
+                height: 610px;
                 background-image: url(img/profile1.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
-                padding-top: 10px;
             }
-            #big1{
-                margin:auto;
-                width: 250px;
-                background-color: rgba(206, 203, 172, 0.5);
+            #xiangce{
+                background-color: rgb(46, 167, 192);
+                width: 100%;
+                height: 610px;
             }
-            .little{
-                background-color: rgba(250, 252, 253, 0.5);
+            #zuopin{
+                background-color: rgb(149, 71, 155);
+                width: 100%;
+                height: 610px;
+
             }
-            p{
+            #fangwen{
+                background-color: rgb(20, 165, 54);
+                width: 100%;
+                height: 610px;
+            }
+            #inner{
+                border-color: antiquewhite;
+                border-radius: 5px;
+                border-style: solid;
+                height: 440px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            hr{
+                margin-top: 50px;
+                margin-bottom: 25px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            .h4{
                 text-align: center;
-                font-size: 30px;
-                color: rgba(15, 157, 193, 0.7);
-                font-family: STKaiti;
+                font-size: 20px;
+                color: #00f7ff;
+            }
+            .h5{
+                text-align: center;
+                margin-top: 15px;
+                margin-bottom: 5px;
+                color: #0affa9b2;
             }
         </style>
     </body>
 </head>
 <body>
-    <div id="big">
-        <div id="big1">
-            <p>你正在使用手机访问thp & crl的私人网站</p>
+    <div id="top">
+        <div id="profile">
         </div>
-        <div id="big1">
-            <p>手机网页目前在开发中，请等待</p>
+        <div class="topword">
+            <p style="color: aliceblue;margin-top:10px;margin-left: 20px;font-size: 18px;">thp & crl</p>
+            <p style="color: aqua;margin-top: 10px;margin-left:5px;font-size: 15px;">这是我们的网站~</p>
+            <p style="color: antiquewhite;margin-top: 10px;font-size: 10px;">（点击左边头像注册/登录）</p>
         </div>
-        <!-- <a href="" class="shouji">
-            <div class="little">
-                <span class="iconfont icon-shouji" style="font-size: 100px;color: rgba(0, 229, 255, 0.5);margin-left:120px;"></span>
-                <p style="font-size: 25px;">我用的手机</p>
-            </div>
-        </a>
-        <a href="index1.html">
-            <div class="little">
-                <span class="iconfont icon-diannao" style="font-size: 100px;color: rgba(0, 229, 255, 0.5);margin-left:120px;"></span>
-                <p style="font-size: 25px;">我用的电脑</p>
-            </div>
-        </a> -->
+        <div id="topbig">
+            <a href="#zhuye"><div class="topbig" style="background-color: rgb(188, 193, 96);">
+                <span class="iconfont icon-aiqing" style="font-size: 25px;margin-left: 20px;"></span>
+                <span style="font-size: 15px;margin-left: 18px;">主页</span>
+            </div></a>
+            <a href="#xiangce"><div class="topbig" style="background-color: rgb(46, 167, 192);">
+                <span class="iconfont icon-xiangce" style="font-size: 25px;margin-left: 20px;"></span>
+                <span style="font-size: 15px;margin-left: 18px;">相册</span>
+            </div></a>
+            <a href="#zuopin"><div class="topbig" style="background-color: rgb(149, 71, 155);">
+                <span class="iconfont icon-yongyan" style="font-size: 25px;margin-left: 20px;"></span>
+                <span style="font-size: 15px;margin-left: 18px;">作品</span>
+            </div></a>
+            <a href="#fangwen"><div class="topbig" style="background-color: rgb(20, 165, 54);">
+                <span class="iconfont icon-fangwen" style="font-size: 25px;margin-left: 20px;"></span>
+                <span style="font-size: 15px;margin-left: 8.7px;">访问记录</span>
+            </div></a>
+        </div>
+    </div>
+
+
+    <div id="zhuye">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 style="font-size:30px;color: rgb(104, 155, 199);margin-left:65px;">唐海平 & 陈如蓝</h1>
+        <h3 style="font-size:25px;color: rgb(254, 196, 108);float: left;margin-top: 120px;">“&nbsp;多巴胺的绑架没有救赎，</h3>
+        <h3 style="font-size:25px;color: rgb(254, 196, 108);float: right;margin-top: 50px;">我们都是上瘾的囚徒。”</h3>
+        <div style="border-style: solid;border-color: rgb(189, 182, 101);border-width:5px;height: 60px;background-color: rgb(191,165,175);margin-top:353px;text-align: center;">
+            <h4 id="timeoff" style="color:aliceblue;font-size: 21px;margin-top: 17px;"></h4>
+        </div>
+    </div>
+
+    <div id="xiangce">
+        <br>
+        <hr>
+        <div>
+            <h4 class="h4"><span class="iconfont icon-yejing" style="font-size: 25px;"></span><b style="margin-left: 1em;">相册</b></h4>
+            <h5 class="h5">去哪里旅行并不重要，重要的是跟谁一起旅行.</h5>
+        </div>
+        <div id="inner">
+
+        </div>
+    </div>
+
+    <div id="zuopin">
+        <br>
+        <hr>
+        <div>
+            <h4 class="h4"><span class="iconfont icon-yejing" style="font-size: 25px;"></span><b style="margin-left: 1em;">作品</b></h4>
+            <h5 class="h5" style="margin-left: 1.5em;">Our masterpiece.</h5>
+        </div>
+        <div id="inner">
+            
+        </div>
+    </div>
+
+    <div id="fangwen">
+        <br>
+        <hr>
+        <div>
+            <h4 class="h4"><span class="iconfont icon-yejing" style="font-size: 25px;"></span><b style="margin-left: 1em;">留下你的访问记录</b></h4>
+            <h5 class="h5">期待你的留言.</h5>
+        </div>
+        <div id="inner">
+            
+        </div>
+    </div>
+    <div style="margin-top: 15px;height: 30px;">
+        <h5 style="color: rgb(93, 130, 162);text-align: center;">https://thpcrl.netlify.app</h5>
     </div>
 
 
 
 
+
+
+    <script>                                              //计时
+        let timeoff = document.getElementById('timeoff')
+        let timer = setInterval(function(){
+            let now_time = new Date() 
+            let end_time = new Date('2023-2-18 22:33:00') 
+            let left_time = parseInt((now_time-end_time)/1000)    
+            let d = parseInt(left_time/86400)   
+            let h = parseInt(left_time%86400/3600)   
+            let m = parseInt(left_time%3600/60) 
+            let s = parseInt(left_time%60)     
+            timeoff.innerText = `我们已经在一起${d}天${h}时${m}分${s}秒.`
+            })
+    </script>
 
     <script>                                          //点击爱心
         (function(window,document,undefined){
